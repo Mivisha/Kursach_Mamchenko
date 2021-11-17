@@ -298,13 +298,7 @@
             <h2 class="section-title">Наші тренери</h2>
             <p class="intro">See who are behind AppKit</p>
             <div class="members-wrapper row">
-              
-
-
-              <div id="app">
-                <table class="table table-dark">
-                  <tr v-for="item in teachers"  v-bind:key="item.id">
-                    <div class="item col-md-6 col-sm-6 col-xs-12">
+                    <div class="item col-md-6 col-sm-6 col-xs-12"  v-for="item in teachers"  v-bind:key="item.photo">
                       <div class="item-inner">
                           <div class="profile">
                               <img class="profile-image" v-bind:src="item.photo">
@@ -323,16 +317,8 @@
                               </div><!--//member-desc-->
                           </div><!--//member-content-->
                       </div><!--//item-inner-->
-                  </div><!--//item-->  
-                  </tr>
-                </table>
-              </div>
-
-                
-
-
-
-          <!--      <div class="item col-md-6 col-sm-6 col-xs-12">
+                  </div><!--//item--> 
+              <!-- <div class="item col-md-6 col-sm-6 col-xs-12">
                     <div class="item-inner">
                         <div class="profile">
                             <img class="profile-image" src="assets/images/MK.jpg" alt="Tom Najdek" />
@@ -400,10 +386,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div>-->
+    </div>
     
     <div id="pricing" class="pricing-section">
         <div class="container text-center">
