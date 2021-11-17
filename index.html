@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Responsive website template for developers</title>
+    <title>Academy of dance</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,9 @@
     <link rel="stylesheet" href="assets/css/nicepage.css" media="screen">
     <link rel="stylesheet" href="assets/css/contact.css" media="screen">
 
-
+      <script src="teachr.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+      <script src="assets/js/teacher.js" defer></script>
 
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="связь">
@@ -270,35 +272,67 @@
             
         </div><!--//container-->
     </div><!--//features-->
-    
+
+
+
+
+
+
+   <!-- <div id="app">
+      <table class="table table-dark">
+        <tr v-for="item in teachers"  v-bind:key="item.id">
+          <img class="profile-image" src="{{item.photo}}">
+          <td>{{item.name}}</td>
+        </tr>
+      </table>
+    </div>
+  -->
+
+
+
+
+
+
     <div class="team-section" id="team">
         <div class="container text-center">
             <h2 class="section-title">Наші тренери</h2>
             <p class="intro">See who are behind AppKit</p>
             <div class="members-wrapper row">
-                <div class="item col-md-6 col-sm-6 col-xs-12">
-                    <div class="item-inner">
-                        <div class="profile">
-                            <img class="profile-image" src="assets/images/VU.jpg" alt="Xiaoying Riley" />
-                        </div>
-                        
-                        <div class="member-content">
-                            <h3 class="member-name">Воскресенська Єліна </h3>
-                            <div class="member-title">Голова Академії танцю</div>
-                            <ul class="social list-inline">
-                                <li><a class="twitter" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="facebook" href="https://www.facebook.com/3rdwavethemes/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="dribbble" href="https://dribbble.com/Xiaoying" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                               <li><a class="linkedin" href="https://uk.linkedin.com/in/xiaoying" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                
-                            </ul>
-                            <div class="member-desc">
-                               <p>Xiaoying is the UX/UI designer behind AppKit. She loves designing and making Bootstrap themes/templates for developers and startups. You can find her sharing useful UX and webdev related content on <a href="https://twitter.com/3rdwave_themes" target="_blank">Twitter</a> and <a href="https://www.facebook.com/3rdwavethemes/" target="_blank">Facebook</a>. Follow her if you like what she does!</p>
-                            </div><!--//member-desc-->
-                        </div><!--//member-content-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-                <div class="item col-md-6 col-sm-6 col-xs-12">
+              
+
+
+              <div id="app">
+                <table class="table table-dark">
+                  <tr v-for="item in teachers"  v-bind:key="item.id">
+                    <div class="item col-md-6 col-sm-6 col-xs-12">
+                      <div class="item-inner">
+                          <div class="profile">
+                              <img class="profile-image" v-bind:src="item.photo">
+                          </div>
+                          
+                          <div class="member-content">
+                              <h3 class="member-name">{{item.name}} </h3>
+                              <div class="member-title">{{item.posada}} </div>
+                              <ul class="social list-inline">
+                                 
+                                  <li><a class="facebook" href="https://www.facebook.com/3rdwavethemes/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                  
+                              </ul>
+                              <div class="member-desc">
+                                 <p>{{item.desc}}</p>
+                              </div><!--//member-desc-->
+                          </div><!--//member-content-->
+                      </div><!--//item-inner-->
+                  </div><!--//item-->  
+                  </tr>
+                </table>
+              </div>
+
+                
+
+
+
+          <!--      <div class="item col-md-6 col-sm-6 col-xs-12">
                     <div class="item-inner">
                         <div class="profile">
                             <img class="profile-image" src="assets/images/MK.jpg" alt="Tom Najdek" />
@@ -317,10 +351,10 @@
                             <div class="member-desc">
                                 <p>Tom takes care of everything on the programming end making the interface rich and flexible. He is a full-stack developer specialising in building large, scalable and user-friendly web apps. Follow him on <a href="https://twitter.com/tnajdek" target="_blank">Twitter</a> for fresh developer tips and check out his <a href="https://github.com/tnajdek" target="_blank">Github</a> for useful open-source tools.
 </p>
-                            </div><!--//member-desc-->
-                        </div><!--//member-content-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item col-md-6 col-sm-6 col-xs-12">
                     <div class="item-inner">
                         <div class="profile">
@@ -340,10 +374,10 @@
                             <div class="member-desc">
                                 <p>Tom takes care of everything on the programming end making the interface rich and flexible. He is a full-stack developer specialising in building large, scalable and user-friendly web apps. Follow him on <a href="https://twitter.com/tnajdek" target="_blank">Twitter</a> for fresh developer tips and check out his <a href="https://github.com/tnajdek" target="_blank">Github</a> for useful open-source tools.
 </p>
-                            </div><!--//member-desc-->
-                        </div><!--//member-content-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="item col-md-6 col-sm-6 col-xs-12">
                     <div class="item-inner">
                         <div class="profile">
@@ -363,13 +397,13 @@
                             <div class="member-desc">
                                 <p>Tom takes care of everything on the programming end making the interface rich and flexible. He is a full-stack developer specialising in building large, scalable and user-friendly web apps. Follow him on <a href="https://twitter.com/tnajdek" target="_blank">Twitter</a> for fresh developer tips and check out his <a href="https://github.com/tnajdek" target="_blank">Github</a> for useful open-source tools.
 </p>
-                            </div><!--//member-desc-->
-                        </div><!--//member-content-->
-                    </div><!--//item-inner-->
-                </div><!--//item-->
-            </div><!--//members-wrapper-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div><!--//team-section-->
+    </div>-->
     
     <div id="pricing" class="pricing-section">
         <div class="container text-center">
