@@ -302,32 +302,27 @@
 
 
               <div id="app">
-                <table class="table table-dark">
-                  <tr v-for="item in teachers"  v-bind:key="item.id">
-                    <div class="item col-md-6 col-sm-6 col-xs-12">
-                      <div class="item-inner">
-                          <div class="profile">
-                              <img class="profile-image" v-bind:src="item.photo">
-                          </div>
-                          
-                          <div class="member-content">
-                              <h3 class="member-name">{{item.name}} </h3>
-                              <div class="member-title">{{item.posada}} </div>
-                              <ul class="social list-inline">
-                                 
-                                  <li><a class="facebook" href="https://www.facebook.com/3rdwavethemes/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                  
-                              </ul>
-                              <div class="member-desc">
-                                 <p>{{item.desc}}</p>
-                              </div><!--//member-desc-->
-                          </div><!--//member-content-->
-                      </div><!--//item-inner-->
-                  </div><!--//item-->  
-                  </tr>
-                </table>
-              </div>
-
+                <div class="item col-md-6 col-sm-6 col-xs-12"  v-for="item in teachers"  v-bind:key="item.photo">
+                  <div class="item-inner">
+                      <div class="profile">
+                          <img class="profile-image" v-bind:src="item.photo">
+                      </div>
+                      
+                      <div class="member-content">
+                          <h3 class="member-name">{{item.name}} </h3>
+                          <div class="member-title">{{item.posada}} </div>
+                          <ul class="social list-inline">
+                             
+                              <li><a class="facebook" href="https://www.facebook.com/3rdwavethemes/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                              
+                          </ul>
+                          <div class="member-desc">
+                             <p>{{item.desc}}</p>
+                          </div><!--//member-desc-->
+                      </div><!--//member-content-->
+                  </div><!--//item-inner-->
+              </div><!--//item-->  
+          </div>
                 
 
 
