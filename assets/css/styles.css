@@ -662,6 +662,7 @@ a.btn-cta {
   margin: 0 auto;
 }
 .team-section .item-inner {
+  margin-bottom: 10px;
   padding: 30px;
   background: #fff;
   -webkit-border-radius: 8px;
@@ -768,7 +769,8 @@ a.btn-cta {
   padding: 10px;
 }
 
-/* Style the images inside the grid */
+/* Style the images 
+ide the grid */
 .column img {
   opacity: 0.8;
   cursor: pointer;
